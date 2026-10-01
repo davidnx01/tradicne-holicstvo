@@ -1,0 +1,272 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Tradičné Holičstvo · holič a barbier v Trebišove — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh webu pre Tradičné Holičstvo na Šrobárovej ulici v Trebišove: strih vlasov, úprava brady, cenník, hodiny a online rezervácia.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=Sedan+SC&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#1C2924; --green-2:#24342D; --bone:#EEE4CC; --bone-2:#B9B3A2;
+  --gold:#C9A24B; --gold-l:#E4C676; --gold-d:#8E6F2C;
+  --wood-1:#5B3C25; --wood-2:#432B19; --wood-3:#2E1D11;
+  --wash:#E7E5DF; --ink:#1B211E; --ink-2:#55594F;
+  --line-d:rgba(238,228,204,.14); --line-l:rgba(27,33,30,.15);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--green);color:var(--bone);font:400 18px/1.55 "Archivo Narrow",system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--gold-l);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+.sc{font-family:"Sedan SC",Georgia,serif;font-weight:400}
+.cap{font:600 13px/1.3 "Archivo Narrow",sans-serif;letter-spacing:.2em;text-transform:uppercase}
+.num{font-variant-numeric:tabular-nums}
+.u{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+.u:hover{background-size:100% 1px}
+
+.notice{background:#111915;color:#DCD4C0;font-size:14px;line-height:1.45;padding:9px 16px;text-align:center}
+
+.hd{display:flex;align-items:center;gap:26px;min-height:80px;border-bottom:1px solid var(--line-d)}
+.mark{display:flex;align-items:center;gap:14px;text-decoration:none;white-space:nowrap}
+.mark .mono{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--gold);color:var(--gold);font:400 19px/1 "Sedan SC",serif;letter-spacing:.02em}
+.mark .nm{font:400 22px/1 "Sedan SC",serif;letter-spacing:.06em}
+.hd nav{margin-left:auto;display:flex;gap:26px;font-size:17px}
+.hd .tel{font-size:17px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;font:600 16px/1 "Archivo Narrow",sans-serif;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;white-space:nowrap;border:1px solid var(--gold);color:var(--bone);transition:background-color .2s,color .2s}
+.btn:hover{background:var(--gold);color:var(--wood-3)}
+.btn.gold{background:var(--gold);color:var(--wood-3)}
+.btn.gold:hover{background:var(--gold-l)}
+
+/* wood + gold leaf — shared material of all boards */
+.board{position:relative;color:var(--bone);
+  background:
+   radial-gradient(60% 50% at 18% 30%,rgba(255,236,200,.08),transparent 70%),
+   radial-gradient(40% 40% at 82% 76%,rgba(0,0,0,.22),transparent 70%),
+   repeating-linear-gradient(180deg,transparent 0 3px,rgba(0,0,0,.07) 3px 4px,transparent 4px 11px,rgba(255,225,180,.035) 11px 12px,transparent 12px 19px),
+   repeating-linear-gradient(180deg,transparent 0 calc(33.33% - 1px),rgba(0,0,0,.45) calc(33.33% - 1px) 33.33%),
+   linear-gradient(176deg,var(--wood-1),var(--wood-2) 45%,#4f3420 70%,var(--wood-3));
+  box-shadow:inset 0 0 0 4px var(--gold-d),inset 0 0 0 6px var(--gold),inset 0 0 0 7px var(--gold-d),inset 0 0 50px rgba(0,0,0,.45),0 30px 50px -28px rgba(0,0,0,.9)}
+.board::before{content:"";position:absolute;inset:16px;border:1px solid rgba(228,198,118,.75);pointer-events:none}
+.paint{color:var(--bone);text-shadow:0 1px 0 rgba(0,0,0,.55),0 0 1px rgba(238,228,204,.6)}
+.leaf{color:var(--gold-l);background:linear-gradient(180deg,#F1D88F,#C9A24B 55%,#9E7B30);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 1px 0 rgba(0,0,0,.6))}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding-top:30px;padding-bottom:70px;min-height:min(600px,82vh)}
+.hang{position:relative}
+.hang svg{display:block;width:100%;height:auto}
+.sign{margin-top:-2px;padding:58px 48px 54px;text-align:center}
+.sign .cap{color:var(--gold-l)}
+.sign h1{margin:18px 0 0;font-size:clamp(46px,6vw,82px);line-height:.98;letter-spacing:.03em}
+.sign h1 span{display:block}
+.sign .rule{display:block;width:120px;height:1px;margin:26px auto 18px;background:var(--gold)}
+.sign .addr{font-size:19px;letter-spacing:.08em;color:#E2D7BC}
+.intro .cap{color:var(--gold)}
+.intro h2{font:400 clamp(30px,3vw,40px)/1.12 "Sedan SC",serif;margin:14px 0 0;letter-spacing:.02em}
+.intro p{color:var(--bone-2);margin:18px 0 0;max-width:40ch}
+.intro .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.stamp{display:flex;gap:18px;align-items:center;margin-top:34px;padding-top:20px;border-top:1px solid var(--line-d)}
+.stamp b{font:400 44px/1 "Sedan SC",serif;color:var(--gold-l)}
+.stamp span{font-size:15px;color:var(--bone-2);line-height:1.4}
+
+/* PRICE + HOURS boards: the money block */
+.prices{padding:0 0 96px}
+.prices .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;align-items:stretch}
+.pb{padding:52px 56px 46px}
+.pb .cap{color:var(--gold-l)}
+.pb h2{margin:10px 0 26px;font:400 44px/1 "Sedan SC",serif;letter-spacing:.04em}
+.row{display:flex;align-items:baseline;gap:14px;padding:12px 0;font-size:24px}
+.row .dots{flex:1;border-bottom:2px dotted rgba(228,198,118,.55);transform:translateY(-6px)}
+.row .pr{font:700 34px/1 "Archivo Narrow",sans-serif;font-variant-numeric:tabular-nums}
+.row .sv{font-family:"Sedan SC",serif;letter-spacing:.03em}
+.pb .src{margin:26px 0 0;font-size:14px;color:#CFC3A6;line-height:1.45}
+.hb{padding:52px 40px 46px;background:#121A16;box-shadow:inset 0 0 0 4px var(--gold-d),inset 0 0 0 6px var(--gold),inset 0 0 0 7px var(--gold-d),0 30px 50px -28px rgba(0,0,0,.9);position:relative}
+.hb::before{content:"";position:absolute;inset:16px;border:1px solid rgba(228,198,118,.45)}
+.hb .cap{color:var(--gold-l)}
+.hb h2{margin:10px 0 22px;font:400 34px/1.05 "Sedan SC",serif;letter-spacing:.04em}
+.hb table{width:100%;border-collapse:collapse;font-size:20px}
+.hb th{text-align:left;font-weight:500;padding:10px 0;border-top:1px solid var(--line-d)}
+.hb td{text-align:right;padding:10px 0;border-top:1px solid var(--line-d);font-variant-numeric:tabular-nums}
+.hb .off{color:var(--bone-2)}
+.hb .src{margin:20px 0 0;font-size:14px;color:var(--bone-2);line-height:1.45}
+
+/* SHOP — light whitewash wall */
+.shop{background:var(--wash);color:var(--ink);padding:92px 0}
+.shop .top{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:40px}
+.shop h2{margin:12px 0 0;font:400 clamp(34px,3.6vw,48px)/1.05 "Sedan SC",serif;letter-spacing:.03em}
+.shop .cap{color:var(--gold-d)}
+.shop blockquote{margin:0;font-size:19px;color:var(--ink)}
+.shop blockquote q{font-style:normal}
+.shop cite{display:block;margin-top:8px;font-style:normal;font-size:14px;color:var(--ink-2)}
+.pics{display:grid;grid-template-columns:2.2fr 1fr;gap:22px;align-items:stretch}
+.pics figure{margin:0;display:flex;flex-direction:column}
+.pics .fr{flex:1;overflow:hidden;border:6px solid var(--wood-2);outline:1px solid var(--gold);outline-offset:-10px}
+.pics img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.pics figure:hover img{transform:scale(1.045)}
+.pics figcaption{margin-top:10px;font-size:15px;color:var(--ink-2)}
+.pics .a .fr{aspect-ratio:1600/555}
+.pics .b .fr{aspect-ratio:auto}
+.pics .b img{object-position:30% 50%}
+.facts3{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--line-l)}
+.facts3 div{padding:24px 24px 0 0}
+.facts3 div+div{padding-left:24px;border-left:1px solid var(--line-l)}
+.facts3 b{display:block;font:400 30px/1.1 "Sedan SC",serif;color:var(--wood-2)}
+.facts3 span{display:block;margin-top:6px;font-size:16px;color:var(--ink-2)}
+
+/* CONTACT */
+.contact{padding:90px 0 96px}
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.contact .cap{color:var(--gold)}
+.contact h2{margin:12px 0 0;font:400 clamp(34px,3.6vw,48px)/1.05 "Sedan SC",serif;letter-spacing:.03em}
+.contact p{color:var(--bone-2)}
+.contact .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+dl{margin:0;display:grid;grid-template-columns:150px 1fr;font-size:18px}
+dt,dd{margin:0;padding:15px 0;border-bottom:1px solid var(--line-d)}
+dt{color:var(--bone-2)}
+dd small{display:block;font-size:14px;color:var(--bone-2)}
+
+footer{background:#111915;color:var(--bone-2);font-size:15px;padding:28px 0 34px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+footer .sc{color:var(--gold);letter-spacing:.06em}
+
+.mbar{display:none}
+@media (max-width:940px){
+  .hd nav{display:none}
+  .hd .tel{display:none}
+  .hd .btn{margin-left:auto}
+  .hero{grid-template-columns:1fr;gap:40px;min-height:0;padding-bottom:64px}
+  .prices .wrap,.shop .top,.contact .wrap{grid-template-columns:1fr;gap:28px}
+  .pics{grid-template-columns:1fr}
+  .pics .b .fr{aspect-ratio:540/630;max-width:420px}
+  .pics .a .fr{aspect-ratio:4/3}
+  .pics .a img{object-position:58% 50%}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;z-index:20;left:0;right:0;bottom:0;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(17,25,21,.97);border-top:1px solid rgba(201,162,75,.5)}
+  .mbar a{min-height:48px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:15px}
+  .mbar a:first-child{background:var(--gold);color:var(--wood-3)}
+  .mbar a:last-child{border:1px solid var(--gold);color:var(--bone)}
+  body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+}
+@media (max-width:560px){
+  .mark .nm{font-size:18px}
+  .mark .mono{display:none}
+  .hd{gap:12px}
+  .hd .btn{padding:0 14px}
+  .sign{padding:44px 26px 40px}
+  .sign .addr{font-size:16px}
+  .pb,.hb{padding:42px 28px 36px}
+  .pb h2{font-size:36px}
+  .row{font-size:20px;gap:10px}
+  .row .pr{font-size:28px}
+  .facts3{grid-template-columns:1fr}
+  .facts3 div,.facts3 div+div{padding:18px 0;border-left:0}
+  .facts3 div+div{border-top:1px solid var(--line-l)}
+  dl{grid-template-columns:1fr}
+  dt{border:0;padding-bottom:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="notice" role="note">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<div class="wrap">
+  <header class="hd">
+    <a class="mark" href="#top" aria-label="Tradičné Holičstvo — úvod"><span class="mono">TH</span><span class="nm">Tradičné Holičstvo</span></a>
+    <nav aria-label="Hlavná navigácia"><a class="u" href="#cennik">Cenník</a><a class="u" href="#holicstvo">Holičstvo</a><a class="u" href="#kontakt">Kontakt</a></nav>
+    <a class="u tel num" href="tel:+421947970976">0947 970 976</a>
+    <a class="btn gold" href="https://bookni.si/tradicne-holicstvo" rel="noopener">Rezervovať</a>
+  </header>
+</div>
+
+<main id="top">
+<div class="wrap hero">
+  <div class="hang">
+    <svg viewBox="0 0 600 70" aria-hidden="true" preserveAspectRatio="none">
+      <path d="M0 14 H600" stroke="#0E1411" stroke-width="7"/>
+      <path d="M0 14 H600" stroke="#3A4A42" stroke-width="1.5" transform="translate(0,-2)"/>
+      <path d="M560 14 q22 0 22 18 q0 16 -16 16 q-12 0 -12 -11" fill="none" stroke="#0E1411" stroke-width="5" stroke-linecap="round"/>
+      <path d="M96 16 V70 M504 16 V70" stroke="#8E6F2C" stroke-width="5" stroke-dasharray="7 4" stroke-linecap="round"/>
+    </svg>
+    <div class="board sign">
+      <p class="cap" style="margin:0">Certifikovaný barbier · Trebišov</p>
+      <h1 class="sc paint"><span>Tradičné</span><span>Holičstvo</span></h1>
+      <span class="rule" aria-hidden="true"></span>
+      <p class="addr" style="margin:0">Šrobárova 3842/9 · 075 01 Trebišov</p>
+    </div>
+  </div>
+  <div class="intro">
+    <p class="cap">Vlasy a brada</p>
+    <h2>Strih, brada alebo oboje naraz</h2>
+    <p>Holičstvo pre pánov na Šrobárovej ulici. Termín cez online rezerváciu alebo telefonicky — na FB stránke sa holičstvo predstavuje ako <q>Certifikovaný barbier</q>.</p>
+    <div class="acts">
+      <a class="btn gold" href="tel:+421947970976">Zavolať 0947 970 976</a>
+      <a class="btn" href="https://bookni.si/tradicne-holicstvo" rel="noopener">Online rezervácia</a>
+    </div>
+    <div class="stamp"><b class="num">5,0</b><span>z 5 · 94 hodnotení na Orly Kaderníctva<br>laureát 2025 aj 2026 · stav 1. 10. 2026</span></div>
+  </div>
+</div>
+
+<section class="prices" id="cennik" aria-label="Cenník a otváracie hodiny">
+  <div class="wrap">
+    <div class="board pb">
+      <p class="cap" style="margin:0">Cenník</p>
+      <h2 class="leaf">Holičské služby</h2>
+      <div class="row"><span class="sv paint">Strih vlasov</span><span class="dots"></span><span class="pr leaf">20 €</span></div>
+      <div class="row"><span class="sv paint">Úprava brady</span><span class="dots"></span><span class="pr leaf">20 €</span></div>
+      <div class="row"><span class="sv paint">Komplet</span><span class="dots"></span><span class="pr leaf">35 €</span></div>
+      <p class="src">Podľa cenníka na FB stránke holičstva (zmena cenníka od 1. 2. 2025) — aktuálnosť overiť.</p>
+    </div>
+    <div class="hb">
+      <p class="cap" style="margin:0">Otváracie hodiny</p>
+      <h2 class="paint">Kedy je otvorené</h2>
+      <table>
+        <tr><th scope="row">Pondelok – Piatok</th><td>9:00 – 18:00</td></tr>
+        <tr><th scope="row">Sobota – Nedeľa</th><td class="off">zatvorené</td></tr>
+      </table>
+      <p class="src">Podľa plagátu na FB stránke holičstva — overiť.</p>
+    </div>
+  </div>
+</section>
+
+<section class="shop" id="holicstvo">
+  <div class="wrap">
+    <div class="top">
+      <div><p class="cap">Holičstvo</p><h2>Kreslo, ušiaky a&nbsp;drevený pult</h2></div>
+      <blockquote><q>Tradičné Holičstvo so sídlom na Šrobárovej ulici 3842/9 v Trebišove ponúka klientom starostlivosť o vlasy a bradu so zameraním na tradičné holičské postupy.</q><cite>Popis na portáli Orly Kaderníctva</cite></blockquote>
+    </div>
+    <div class="pics">
+      <figure class="a"><div class="fr"><img src="assets/holicske-kreslo-a-cakaren.webp" width="1600" height="555" loading="lazy" alt="Interiér holičstva: zelené zamatové holičské kreslo v popredí, v pozadí dve hnedé kožené kreslá ušiaky so stolíkom a karafou"></div><figcaption>Holičské kreslo a čakáreň · fotka z FB stránky</figcaption></figure>
+      <figure class="b"><div class="fr"><img src="assets/pult-a-regal.webp" width="540" height="630" loading="lazy" alt="Drevený recepčný pult a nástenný regál s fľaštičkami v holičstve"></div><figcaption>Pult a regál · fotka z FB</figcaption></figure>
+    </div>
+    <div class="facts3">
+      <div><b class="num">5,0 / 5</b><span>94 hodnotení · Orly Kaderníctva</span></div>
+      <div><b>Laureát 2025</b><span>so zlatou medailou · Orly</span></div>
+      <div><b>Laureát 2026</b><span>so zlatou medailou · Orly</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="kontakt">
+  <div class="wrap">
+    <div>
+      <p class="cap">Kontakt</p>
+      <h2>Šrobárova 3842/9</h2>
+      <p>Trebišov. Termín si rezervujte online alebo zavolajte.</p>
+      <div class="acts"><a class="btn gold" href="tel:+421947970976">Zavolať</a><a class="btn" href="https://www.google.com/maps/search/Tradičné+Holičstvo+Trebišov" rel="noopener">Navigovať</a></div>
+    </div>
+    <dl>
+      <dt>Adresa</dt><dd>Šrobárova 3842/9<br>075 01 Trebišov</dd>
+      <dt>Telefón</dt><dd><a class="u num" href="tel:+421947970976">0947 970 976</a><small>podľa FB stránky</small></dd>
+      <dt>E-mail</dt><dd><a class="u" href="mailto:tradicne.holicstvo@gmail.com">tradicne.holicstvo@gmail.com</a></dd>
+      <dt>Hodiny</dt><dd>Po – Pi 9:00 – 18:00 · So – Ne zatvorené<small>podľa plagátu na FB, overiť</small></dd>
+      <dt>Rezervácia</dt><dd><a class="u" href="https://bookni.si/tradicne-holicstvo" rel="noopener">bookni.si/tradicne-holicstvo →</a></dd>
+      <dt>Sociálne siete</dt><dd><a class="u" href="https://www.facebook.com/428202830377237" rel="noopener">Facebook</a> · <a class="u" href="https://www.instagram.com/tradicne.holicstvo" rel="noopener">Instagram @tradicne.holicstvo</a></dd>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span class="sc">Tradičné Holičstvo</span><span>Neoficiálny návrh webu · webdavid.sk · 2026</span></div></footer>
+
+<div class="mbar"><a href="tel:+421947970976">Zavolať</a><a href="https://bookni.si/tradicne-holicstvo" rel="noopener">Rezervovať</a></div>
+</html>
